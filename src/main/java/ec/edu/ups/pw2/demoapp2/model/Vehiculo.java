@@ -22,7 +22,7 @@ public class Vehiculo implements Serializable {
 	@Column(name = "veh_modelo")
 	private String modelo;
 	@Column(name = "veh_anio")
-	private int anio;
+	private String anio;
 	public String getPlaca() {
 		return placa;
 	}
@@ -41,10 +41,10 @@ public class Vehiculo implements Serializable {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	public int getAnio() {
+	public String getAnio() {
 		return anio;
 	}
-	public void setAnio(int anio) {
+	public void setAnio(String anio) {
 		this.anio = anio;
 	}
 	public static long getSerialversionuid() {
